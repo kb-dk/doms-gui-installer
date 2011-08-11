@@ -29,6 +29,8 @@
   <Listener className="org.apache.catalina.mbeans.ServerLifecycleListener" />
   <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
 
+  <Listener className="org.jboss.embedded.tomcat.EmbeddedJBossBootstrapListener" ></Listener>
+
   <!-- Global JNDI resources
        Documentation at /docs/jndi-resources-howto.html
   -->

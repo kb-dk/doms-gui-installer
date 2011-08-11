@@ -24,7 +24,7 @@ BASEDIR=$SCRIPT_DIR/..
 source $SCRIPT_DIR/setenv.sh
 
 # Do the ingest of the base objects
-$SCRIPT_DIR/install_basic_tomcat.sh $TESTBED_DIR
+$SCRIPT_DIR/install_tomcat.sh $TESTBED_DIR
 
 # Do the big package procedure
 $SCRIPT_DIR/package.sh $TESTBED_DIR
@@ -37,8 +37,5 @@ echo "Starting the tomcat server"
 $TOMCAT_DIR/bin/startup.sh > /dev/null
 echo "Sleep 30"
 sleep 30
-
-# Do the ingest of the base objects
-$BASEOBJS_DIR/bin/createOrUpdateBasicObjects.sh
 
 echo "Install complete"
