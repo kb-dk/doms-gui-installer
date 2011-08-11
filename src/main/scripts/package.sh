@@ -91,6 +91,28 @@ if [ ! $TOMCAT_CONFIG_DIR -ef $TOMCAT_DIR/conf ]; then
 
 fi
 
+echo ""
+echo "EMBEDDED JBOSS INSTALL"
+echo ""
+echo "Unpacking the embedded jboss"
+# Unpack a tomcat server
+TEMPDIR=`mktemp -d`
+cp $BASEDIR/data/tomcat/$JBOSSZIP $TEMPDIR
+pushd $TEMPDIR > /dev/null
+unzip -q -n $JBOSSZIP
+mv ${JBOSSZIP%.*}/bootstrap/* $TOMCAT_DIR/lib
+mv ${JBOSSZIP%.*}/lib/* $TOMCAT_DIR/lib
+rm $TOMCAT_DIR/lib/jndi.properties
+popd > /dev/null
+rm -rf $TEMPDIR > /dev/null
+
+# Replace the jboss remoting-service.xml files with our own that enforce the portrange
+mkdir -p $TOMCAT_DIR/conf
+cp -v $CONFIG_TEMP_DIR/jboss-remoting-service.xml $TOMCAT_DIR/lib/deploy/remoting-service.xml
+cp -v $CONFIG_TEMP_DIR/messaging-remoting-service.xml $TOMCAT_DIR/lib/deploy/messaging/remoting-service.xml
+
+
+
 echo "Tomcat setup is now done"
 ## Tomcat is now done
 
@@ -98,6 +120,7 @@ echo "Installing docs"
 mkdir -p $DOCS_DIR
 cp -r $BASEDIR/docs/* $DOCS_DIR
 echo "Docs installed"
+
 
 
 
