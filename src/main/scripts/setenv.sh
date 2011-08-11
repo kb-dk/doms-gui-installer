@@ -23,14 +23,10 @@ TESTBED_DIR=$(pwd)
 popd > /dev/null
 
 # The normal config values
-PORTRANGE=78
-FEDORA_SERVERNAME=localhost
+PORTRANGE=82
 
-FEDORAADMIN=fedoraAdmin
-FEDORAADMINPASS=fedoraAdminPass
-
-FEDORAUSER=fedoraReadOnlyAdmin
-FEDORAUSERPASS=fedoraReadOnlyPass
+FEDORAPORTRANGE=78
+FEDORASERVERNAME=localhost
 
 # The folders
 TOMCAT_DIR=$TESTBED_DIR/tomcat
@@ -38,7 +34,6 @@ TOMCAT_DIR=$TESTBED_DIR/tomcat
 LOG_DIR=$TOMCAT_DIR/logs
 
 SERVICES_DIR=$TESTBED_DIR/services
-
 
 TOMCAT_CONFIG_DIR=$SERVICES_DIR/conf
 

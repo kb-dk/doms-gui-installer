@@ -1,0 +1,11 @@
+<Context>
+
+    <!-- fedora settings, the only one relevant -->
+    <Parameter name="domsGuiConfiguration.port" value="$FEDORAPORTRANGE$80" override="false"/>
+    <Parameter name="domsGuiConfiguration.host" value="$FEDORASERVERNAME$" override="false"/>
+
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+
+</Context>

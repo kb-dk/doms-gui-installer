@@ -78,6 +78,8 @@ ln -s $TOMCAT_CONFIG_DIR/setenv.sh $TOMCAT_DIR/bin/setenv.sh
 chmod +x $TOMCAT_DIR/bin/*.sh
 
 
+# Install context.xml configuration
+cp -v $CONFIG_TEMP_DIR/context.xml.default $TOMCAT_CONFIG_DIR/tomcat-context-params.xml
 
 #if we used the odd Maintenance tomcat setup, symlink stuff together again
 if [ ! $TOMCAT_CONFIG_DIR -ef $TOMCAT_DIR/conf ]; then
