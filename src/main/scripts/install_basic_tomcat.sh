@@ -33,5 +33,20 @@ mv ${TOMCATZIP%.*} $TOMCAT_DIR
 popd > /dev/null
 rm -rf $TEMPDIR > /dev/null
 
+echo ""
+echo "EMBEDDED JBOSS INSTALL"
+echo ""
+echo "Unpacking the embedded jboss"
+# Unpack a tomcat server
+TEMPDIR=`mktemp -d`
+cp $BASEDIR/data/tomcat/$JBOSSZIP $TEMPDIR
+pushd $TEMPDIR > /dev/null
+unzip -q -n $JBOSSZIP
+mv ${JBOSSZIP%.*}/bootstrap/* $TOMCAT_DIR/lib
+mv ${JBOSSZIP%.*}/lib/* $TOMCAT_DIR/lib
+rm $TOMCAT_DIR/lib/jndi.properties
+popd > /dev/null
+rm -rf $TEMPDIR > /dev/null
+
 echo "Tomcat setup is now done"
 ## Tomcat is now done

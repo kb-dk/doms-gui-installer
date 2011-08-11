@@ -1,6 +1,7 @@
 #!/bin/bash
 
-TOMCATZIP=`basename $BASEDIR/data/tomcat/*.zip`
+TOMCATZIP=`basename $BASEDIR/data/tomcat/apache-tomcat-*.zip`
+JBOSSZIP=`basename $BASEDIR/data/tomcat/embedded-jboss-*.zip`
 FEDORAJAR=`basename $BASEDIR/data/fedora/*.jar`
 INGESTERZIP=`basename $BASEDIR/ingester/*.zip`
 
