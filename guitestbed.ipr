@@ -214,15 +214,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: dk.statsbiblioteket.doms.gui:DomsGui:war:1.1.1-SNAPSHOT">
+    <library name="Maven: dk.statsbiblioteket.doms.gui:DomsGui:war:1.1.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/dk/statsbiblioteket/doms/gui/DomsGui/1.1.1-SNAPSHOT/DomsGui-1.1.1-SNAPSHOT.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/dk/statsbiblioteket/doms/gui/DomsGui/1.1.1/DomsGui-1.1.1.war!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/dk/statsbiblioteket/doms/gui/DomsGui/1.1.1-SNAPSHOT/DomsGui-1.1.1-SNAPSHOT-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/dk/statsbiblioteket/doms/gui/DomsGui/1.1.1/DomsGui-1.1.1-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/dk/statsbiblioteket/doms/gui/DomsGui/1.1.1-SNAPSHOT/DomsGui-1.1.1-SNAPSHOT-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/dk/statsbiblioteket/doms/gui/DomsGui/1.1.1/DomsGui-1.1.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: dk.statsbiblioteket.sbutil:sbutil:0.5.2">
