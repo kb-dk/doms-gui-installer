@@ -23,7 +23,7 @@ TESTBED_DIR=$(pwd)
 popd > /dev/null
 
 # The normal config values
-PORTRANGE=82
+PORTRANGE=79
 
 FEDORAPORTRANGE=78
 FEDORASERVERNAME=localhost
