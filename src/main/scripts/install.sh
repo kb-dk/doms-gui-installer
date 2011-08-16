@@ -6,8 +6,6 @@
 #
 # Script for installing the testbed
 #
-
-#
 # Set up basic variables
 #
 SCRIPT_DIR=$(dirname $0)
@@ -39,3 +37,5 @@ echo "Sleep 30"
 sleep 30
 
 echo "Install complete"
+
+# Un set debugging

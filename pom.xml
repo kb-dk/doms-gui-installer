@@ -9,7 +9,7 @@
 
     <groupId>dk.statsbiblioteket.doms.testbed</groupId>
     <artifactId>guitestbed</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.10.22-SNAPSHOT</version>
 
 
     <packaging>pom</packaging>
@@ -99,7 +99,7 @@
         <dependency>
             <groupId>dk.statsbiblioteket.doms.gui</groupId>
             <artifactId>DomsGui</artifactId>
-            <version>1.1.1</version>
+            <version>1.1.2-SNAPSHOT</version>
             <type>war</type>
         </dependency>
 
