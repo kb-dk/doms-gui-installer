@@ -87,9 +87,13 @@ if [ ! $TOMCAT_CONFIG_DIR -ef $TOMCAT_DIR/conf ]; then
    #first, link to context.xml into the correct location
    mkdir -p $TOMCAT_DIR/conf/Catalina/localhost
    ln -s $TOMCAT_CONFIG_DIR/tomcat-context-params.xml $TOMCAT_DIR/conf/Catalina/localhost/context.xml.default
-
-
 fi
+
+echo ""
+echo "Installing custom security certificate"
+echo ""
+mkdir $TOMCAT_CONFIG_DIR/certs
+cp $BASEDIR/data/tomcat/cacerts $TOMCAT_CONFIG_DIR/certs
 
 echo ""
 echo "EMBEDDED JBOSS INSTALL"

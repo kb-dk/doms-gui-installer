@@ -1,1 +1,1 @@
-JAVA_OPTS="$JAVA_OPTS -Dsun.lang.ClassLoader.allowArraySyntax=true"
+JAVA_OPTS="$JAVA_OPTS -Dsun.lang.ClassLoader.allowArraySyntax=true -Djavax.net.ssl.trustStore=$TOMCAT_CONFIG_DIR$/certs/cacerts"
