@@ -356,31 +356,6 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnBranchConfigurationManager">
-    <option name="myConfigurationMap">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <SvnBranchConfiguration>
-              <option name="branchMap">
-                <map>
-                  <entry key="https://doms.svn.sourceforge.net/svnroot/doms/guitestbed/tags">
-                    <value>
-                      <list />
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="branchUrls">
-                <list>
-                  <option value="https://doms.svn.sourceforge.net/svnroot/doms/guitestbed/tags" />
-                </list>
-              </option>
-              <option name="trunkUrl" value="https://doms.svn.sourceforge.net/svnroot/doms/guitestbed/trunk" />
-            </SvnBranchConfiguration>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500">
