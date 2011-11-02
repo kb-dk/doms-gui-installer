@@ -33,8 +33,8 @@ $SCRIPT_DIR/package.sh $TESTBED_DIR
 echo ""
 echo "Starting the tomcat server"
 $TOMCAT_DIR/bin/startup.sh > /dev/null
-echo "Sleep 30"
-sleep 30
+#echo "Sleep 30"
+#sleep 30
 
 echo "Install complete"
 

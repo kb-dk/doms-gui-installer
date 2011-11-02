@@ -4,20 +4,20 @@
     <parent>
         <groupId>dk.statsbiblioteket.doms</groupId>
         <artifactId>doms</artifactId>
-        <version>0.1.1</version>
+        <version>0.1.3</version>
     </parent>
 
     <groupId>dk.statsbiblioteket.doms.testbed</groupId>
     <artifactId>guitestbed</artifactId>
-    <version>0.10.22-SNAPSHOT</version>
+    <version>0.10.22</version>
 
 
     <packaging>pom</packaging>
 
     <scm>
-        <connection>scm:svn:https://doms.svn.sourceforge.net/svnroot/doms/guitestbed/trunk</connection>
-        <developerConnection>scm:svn:https://doms.svn.sourceforge.net/svnroot/doms/guitestbed/trunk</developerConnection>
-        <url>http://doms.svn.sourceforge.net/viewvc/doms/guitestbed/trunk</url>
+        <connection>scm:svn:https://doms.svn.sourceforge.net/svnroot/doms/guitestbed/tags/guitestbed-0.10.22</connection>
+        <developerConnection>scm:svn:https://doms.svn.sourceforge.net/svnroot/doms/guitestbed/tags/guitestbed-0.10.22</developerConnection>
+        <url>http://doms.svn.sourceforge.net/viewvc/doms/guitestbed/tags/guitestbed-0.10.22</url>
     </scm>
 
 
@@ -33,6 +33,7 @@
                     <artifactId>radio-tv</artifactId>
                     <version>0.0.6</version>
                     <classifier>ingester</classifier>
+
                     <type>zip</type>
                 </dependency>
 
@@ -99,7 +100,7 @@
         <dependency>
             <groupId>dk.statsbiblioteket.doms.gui</groupId>
             <artifactId>DomsGui</artifactId>
-            <version>1.1.2-SNAPSHOT</version>
+            <version>1.1.2</version>
             <type>war</type>
         </dependency>
 

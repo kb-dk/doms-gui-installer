@@ -26,7 +26,7 @@ popd > /dev/null
 PORTRANGE=79
 
 FEDORAPORTRANGE=78
-FEDORASERVERNAME=localhost
+FEDORASERVERNAME=alhena
 
 # The folders
 TOMCAT_DIR=$TESTBED_DIR/tomcat
