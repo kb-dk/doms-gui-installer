@@ -7,5 +7,9 @@
     <!-- Default set of monitored resources -->
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
 
-
+    <!-- CAS settings -->
+    <Parameter name="casServerLoginUrl" value="$CASSERVERLOGINURL$" override="false"/>
+    <Parameter name="casServerUrlPrefix" value="$CASSERVERLOGINURL$" override="false"/>
+    <Parameter name="service" value="http://$GUISERVERNAME$:$PORTRANGE$80/DomsGui/" override="false"/>
+    <Parameter name="serverName" value="$GUISERVERNAME$" override="false"/>
 </Context>

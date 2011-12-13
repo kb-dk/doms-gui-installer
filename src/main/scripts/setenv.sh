@@ -24,9 +24,12 @@ popd > /dev/null
 
 # The normal config values
 PORTRANGE=79
+GUISERVERNAME=alhena
 
 FEDORAPORTRANGE=78
 FEDORASERVERNAME=alhena
+
+CASSERVERLOGINURL=https://samling.statsbiblioteket.dk/casinternal/
 
 # The folders
 TOMCAT_DIR=$TESTBED_DIR/tomcat

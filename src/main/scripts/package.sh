@@ -17,9 +17,11 @@ sed \
 -e 's|\$FEDORA_DIR\$|'"$FEDORA_DIR"'|g' \
 -e 's|\$TOMCAT_CONFIG_DIR\$|'"$TOMCAT_CONFIG_DIR"'|g' \
 -e 's|\$WEBAPPS_DIR\$|'"$WEBAPPS_DIR"'|g' \
+-e 's|\$GUISERVERNAME\$|'"$GUISERVERNAME"'|g' \
 -e 's|\$PORTRANGE\$|'"$PORTRANGE"'|g' \
 -e 's|\$FEDORASERVERNAME\$|'"$FEDORASERVERNAME"'|g' \
 -e 's|\$FEDORAPORTRANGE\$|'"$FEDORAPORTRANGE"'|g' \
+-e 's|\$CASSERVERLOGINURL\$|'"$CASSERVERLOGINURL"'|g' \
 <$1 > $2
 }
 
