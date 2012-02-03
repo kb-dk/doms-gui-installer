@@ -117,7 +117,8 @@ mkdir -p $TOMCAT_DIR/conf
 cp -v $CONFIG_TEMP_DIR/jboss-remoting-service.xml $TOMCAT_DIR/lib/deploy/remoting-service.xml
 cp -v $CONFIG_TEMP_DIR/messaging-remoting-service.xml $TOMCAT_DIR/lib/deploy/messaging/remoting-service.xml
 
-
+# Replace jboss logging configuration
+cp -v $CONFIG_TEMP_DIR/log4j.xml $TOMCAT_DIR/lib/log4j.xml
 
 echo "Tomcat setup is now done"
 ## Tomcat is now done
