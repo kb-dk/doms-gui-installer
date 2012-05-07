@@ -9,7 +9,7 @@
 
     <groupId>dk.statsbiblioteket.doms.testbed</groupId>
     <artifactId>guitestbed</artifactId>
-    <version>0.11.2-SNAPSHOT</version>
+    <version>0.11.2-nocas-SNAPSHOT</version>
 
 
     <packaging>pom</packaging>
@@ -100,7 +100,7 @@
         <dependency>
             <groupId>dk.statsbiblioteket.doms.gui</groupId>
             <artifactId>DomsGui</artifactId>
-            <version>1.1.5</version>
+            <version>1.1.6-nocas-SNAPSHOT</version>
             <type>war</type>
         </dependency>
 
