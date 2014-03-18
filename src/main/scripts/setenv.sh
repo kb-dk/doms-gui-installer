@@ -23,11 +23,11 @@ TESTBED_DIR=$(pwd)
 popd > /dev/null
 
 # The normal config values
-PORTRANGE=79
+PORTRANGE=78
 GUISERVERNAME=alhena
 
 FEDORAPORTRANGE=78
-FEDORASERVERNAME=alhena
+FEDORASERVERNAME=localhost
 
 CASSERVERLOGINURL=https://samling.statsbiblioteket.dk/casinternal/
 
