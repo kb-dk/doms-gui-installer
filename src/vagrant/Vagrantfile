@@ -25,6 +25,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.ssh.forward_x11 = true
 
+  #VirtualBox should not synchronize the guest clock with the host. Guest must use ntp for all
+  # https://www.virtualbox.org/manual/ch09.html#disabletimesync
+  config.vm.provider :virtualbox do |v|
+    v.customize ["setextradata", :id, "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled", 1]
+  end
+
   #These network things are nessesary to make ubuntu work fast
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
