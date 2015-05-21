@@ -22,6 +22,11 @@ apt-get install -y xorg
 echo "192.168.50.2 doms-testbed" >> /etc/hosts
 echo "192.168.50.4 domsgui-testbed" >> /etc/hosts
 
+#The host machine might have a screwed clock, so set it correctly in the vagrant
+echo "server ntp.statsbiblioteket.dk" > /etc/ntp.conf #we do not want it synchronizing with odd servers
+sudo service ntp stop # Restart the ntp service so that only the ntp.statsbiblioteket.dk is used
+sudo ntpdate ntp.statsbiblioteket.dk # And make sure the date is now set from ntp server
+
 
 #sudo su - vagrant -c "bash /vagrant/doms.sh"
 
