@@ -3,6 +3,8 @@ export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64/
 
 
 INSTALL_DIR="$HOME/domsgui"
+killall -9 java
+rm -r $INSTALL_DIR
 
 export TMPDIR=$HOME/tmp
 mkdir -p $TMPDIR
