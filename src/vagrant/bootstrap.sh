@@ -14,11 +14,6 @@ apt-get install -y openjdk-6-jdk
 
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64/
 
-
-apt-get install -y redis-server
-
-apt-get install -y xorg
-
 echo "192.168.50.2 doms-testbed" >> /etc/hosts
 echo "192.168.50.4 domsgui-testbed" >> /etc/hosts
 
