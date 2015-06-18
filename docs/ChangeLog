@@ -1,6 +1,22 @@
-24/1/2012 0.11.1
-Updated the gui webapp to 1.1.5
+2015-06-18 1.1
 
-13/12/2011 0.11.0
+* Updated the gui webapp to 1.3
+* Minor improvements for vagrant test box
 
-Initial release
+2014-09-18 1.0
+
+* Updated the gui webapp to 1.2
+* Add a vagrant test box
+* Default ports are now 7801, not 7980
+
+2012-04-12 0.11.2
+
+* Updated the gui webapp to 1.1.6
+
+2012-01-24 0.11.1
+
+* Updated the gui webapp to 1.1.5
+
+2011-12-13 0.11.0
+
+* Initial release
