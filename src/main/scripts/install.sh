@@ -27,15 +27,3 @@ $SCRIPT_DIR/install_tomcat.sh $TESTBED_DIR
 # Do the big package procedure
 $SCRIPT_DIR/package.sh $TESTBED_DIR
 
-#
-# Start the tomcat server
-#
-echo ""
-echo "Starting the tomcat server"
-$TOMCAT_DIR/bin/startup.sh > /dev/null
-#echo "Sleep 30"
-#sleep 30
-
-echo "Install complete"
-
-# Un set debugging
